@@ -1,0 +1,29 @@
+.product-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  padding: 30px;
+}
+.reset_cart{
+  
+  background-color: #000;
+  margin-left: 40%;
+  height: 50px;
+  width: 190px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-bottom: 40%;
+
+  
+  
+}
+
+
+.no-data {
+  font-weight: 400;
+  a {
+    color: #4169e1;
+  }
+  
+}

@@ -1,0 +1,23 @@
+
+<div class="product-list">
+
+    
+
+    <ng-container *ngFor="let product of cartProduct">
+        <app-card [cartComponent]="true" [product]="product"></app-card>
+    </ng-container>
+    
+
+    <ng-container *ngIf="cartProduct.length == 0">
+        <h4 class="no-data">
+            Please Add some items in your cart. Go to <a routerLink="/dashboard">Dashboard</a>
+        </h4>
+    </ng-container>    
+
+
+</div>
+<ng-container *ngIf="cartProduct.length != 0">
+    <button type="button" class="btn btn-primary reset_cart " (click)="AllremoveCart()">Place your order</button>
+
+</ng-container> 
+
